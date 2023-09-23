@@ -29,7 +29,33 @@
         </button>
       </div>
     </div>
-    <script type="text/javascript" src="./script.js"></script>
+
+    <script>
+      // /get the elment having the couunt
+      let countValue = document.querySelector("#count");
+
+      const increment = () => {
+        // get the value from the element
+        let value = parseInt(countValue.innerText);
+
+        // increment the value
+        value += 1;
+
+        //insert the updated value into the element
+        countValue.innerText = value;
+      };
+
+      const decrement = () => {
+        // get the value from the element
+        let value = parseInt(countValue.innerText);
+
+        // increment the value
+        value -= 1;
+
+        //insert the updated value into the element
+        countValue.innerText = value;
+      };
+    </script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   </body>
 
